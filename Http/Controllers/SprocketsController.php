@@ -1,12 +1,12 @@
 <?php
 
-namespace Modules\Sprokets\Http\Controllers;
+namespace Modules\Sprockets\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 
-class SproketsController extends Controller
+class SprocketsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class SproketsController extends Controller
      */
     public function index()
     {
-        return view('sprokets::index');
+        return view('sprockets::index');
     }
 
     /**
@@ -23,7 +23,7 @@ class SproketsController extends Controller
      */
     public function create()
     {
-        return view('sprokets::create');
+        return view('sprockets::create');
     }
 
     /**
@@ -41,7 +41,7 @@ class SproketsController extends Controller
      */
     public function edit()
     {
-        return view('sprokets::edit');
+        return view('sprockets::edit');
     }
 
     /**

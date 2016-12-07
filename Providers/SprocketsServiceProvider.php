@@ -1,10 +1,10 @@
 <?php
 
-namespace Modules\Sprokets\Providers;
+namespace Modules\Sprockets\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-class SproketsServiceProvider extends ServiceProvider
+class SprocketsServiceProvider extends ServiceProvider
 {
     /**
      * Indicates if loading of the provider is deferred.
@@ -43,10 +43,10 @@ class SproketsServiceProvider extends ServiceProvider
     protected function registerConfig()
     {
         $this->publishes([
-            __DIR__.'/../Config/config.php' => config_path('sprokets.php'),
+            __DIR__.'/../Config/config.php' => config_path('sprockets.php'),
         ]);
         $this->mergeConfigFrom(
-            __DIR__.'/../Config/config.php', 'sprokets'
+            __DIR__.'/../Config/config.php', 'sprockets'
         );
     }
 
@@ -57,7 +57,7 @@ class SproketsServiceProvider extends ServiceProvider
      */
     public function registerViews()
     {
-        $viewPath = base_path('resources/views/modules/sprokets');
+        $viewPath = base_path('resources/views/modules/sprockets');
 
         $sourcePath = __DIR__.'/../Resources/views';
 
@@ -66,8 +66,8 @@ class SproketsServiceProvider extends ServiceProvider
         ]);
 
         $this->loadViewsFrom(array_merge(array_map(function ($path) {
-            return $path . '/modules/sprokets';
-        }, \Config::get('view.paths')), [$sourcePath]), 'sprokets');
+            return $path . '/modules/sprockets';
+        }, \Config::get('view.paths')), [$sourcePath]), 'sprockets');
     }
 
     /**
@@ -77,12 +77,12 @@ class SproketsServiceProvider extends ServiceProvider
      */
     public function registerTranslations()
     {
-        $langPath = base_path('resources/lang/modules/sprokets');
+        $langPath = base_path('resources/lang/modules/sprockets');
 
         if (is_dir($langPath)) {
-            $this->loadTranslationsFrom($langPath, 'sprokets');
+            $this->loadTranslationsFrom($langPath, 'sprockets');
         } else {
-            $this->loadTranslationsFrom(__DIR__ .'/../Resources/lang', 'sprokets');
+            $this->loadTranslationsFrom(__DIR__ .'/../Resources/lang', 'sprockets');
         }
     }
 

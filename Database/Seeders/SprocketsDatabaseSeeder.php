@@ -1,11 +1,11 @@
 <?php
 
-namespace Modules\Sprokets\Database\Seeders;
+namespace Modules\Sprockets\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
-class SproketsDatabaseSeeder extends Seeder
+class SprocketsDatabaseSeeder extends Seeder
 {
     /**
      * Run the database seeds.

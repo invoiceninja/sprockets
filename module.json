@@ -1,12 +1,12 @@
 {
-    "name": "Sprokets",
-    "alias": "sprokets",
+    "name": "Sprockets",
+    "alias": "sprockets",
     "description": "",
     "keywords": [],
     "active": 1,
     "order": 0,
     "providers": [
-        "Modules\\Sprokets\\Providers\\SproketsServiceProvider"
+        "Modules\\Sprockets\\Providers\\SprocketsServiceProvider"
     ],
     "aliases":{},
     "files": [

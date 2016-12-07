@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['middleware' => 'auth', 'prefix' => 'sprokets', 'namespace' => 'Modules\Sprokets\Http\Controllers'], function()
+Route::group(['middleware' => 'auth', 'prefix' => 'sprockets', 'namespace' => 'Modules\Sprockets\Http\Controllers'], function()
 {
-    Route::get('/', 'SproketsController@index');
+    Route::get('/', 'SprocketsController@index');
 });
