@@ -1,4 +1,4 @@
-@extends('sprokets::layouts.master')
+@extends('header')
 
 @section('content')
     <h1>Hello World</h1>
