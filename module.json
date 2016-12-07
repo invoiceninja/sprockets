@@ -1,0 +1,15 @@
+{
+    "name": "Sprokets",
+    "alias": "sprokets",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Sprokets\\Providers\\SproketsServiceProvider"
+    ],
+    "aliases":{},
+    "files": [
+        "start.php"
+    ]
+}
