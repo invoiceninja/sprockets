@@ -1,10 +1,10 @@
 {
-    "name": "nwidart/sprokets",
-    "description": "",
+    "name": "invoiceninja/sprockets",
+    "description": "Sample custom module",
     "authors": [
         {
-            "name": "Nicolas Widart",
-            "email": "n.widart@gmail.com"
+            "name": "Hillel Coren",
+            "email": "hillelcoren@gmail.com"
         }
     ],
     "autoload": {
